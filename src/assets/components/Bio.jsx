@@ -18,9 +18,11 @@ function MyBioComponent() {
         </div>
 
         <div className="md:w-1/2 p-8 md:p-12 lg:p-16">
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-emerald-600">
-            My Bio
-          </h1>
+         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 
+               text-emerald-600 tracking-tight 
+               sm:text-center md:text-left">
+  My Bio
+</h1>
 
           <div className="text-gray-500 mb-10 text-base md:text-lg">
             <p className="mb-4 leading-relaxed">
@@ -55,7 +57,7 @@ function MyBioComponent() {
           </div>
 
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-emerald-600">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-emerald-600 sm:text-center">
               Development Skills
             </h2>
 
