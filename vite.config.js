@@ -7,5 +7,6 @@ export default defineConfig({
   plugins: [react(),
       tailwindcss(),
   ],
+  base: "https://github.com/Henrychigozie/My-portfolio.git",
   
 })
