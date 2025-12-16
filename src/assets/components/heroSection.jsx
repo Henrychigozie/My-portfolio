@@ -149,18 +149,20 @@ const Herosection = () => {
 
           <div className="flex flex-col sm:flex-row gap-5 pt-4 justify-center md:justify-start">
             <a
-              href="https://wa.me/2347084544389?text=Hello%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch."
+              href="https://wa.me/2347084544389?text=Hello%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch." target="blank"
               className="px-7 py-3 bg-green-500 text-black font-semibold rounded-md hover:bg-green-400 transition"
             >
               Hire Me
             </a>
 
-            {/* <a
-              href="/cv.pdf"
-              className="px-7 py-3 border border-white/30 rounded-md hover:border-green-400 hover:text-green-400 transition"
-            >
-              Download CV
-            </a> */}
+         <a
+  href="https://github.com/Henrychigozie"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-7 py-3 border border-white/30 rounded-md hover:border-purple-500 hover:text-purple-500 transition"
+>
+  Check my GitHub
+</a>
           </div>
         </div>
 
