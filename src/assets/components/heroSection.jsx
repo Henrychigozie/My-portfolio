@@ -48,7 +48,7 @@ const Herosection = () => {
   const [scrolled, setScrolled] = useState(false);
   const [typedText, setTypedText] = useState("");
 
-  const fullText = "A Junior Frontend Developer";
+  const fullText = "A Frontend Developer";
   const illustrationUrl = Image;
 
   /* Sticky navbar effect */
