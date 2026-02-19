@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Image2 from "../2025-12-15_18-23-48_490.jpg";
 
 const SkillBar = ({ label, percentage, colorClass, barColor }) => (
@@ -47,10 +48,24 @@ function MyBioComponent() {
         {/* Content Section */}
         <div className="md:w-7/12 p-8 lg:p-16 flex flex-col justify-center">
           <header className="mb-6">
-            <p className="text-emerald-500 font-mono text-xs mb-3 tracking-[0.3em] uppercase">About Me</p>
+
+            {/* MOTION SPAN ADDED HERE ONLY */}
+
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-emerald-500 font-mono text-xs mb-3 tracking-[0.3em] uppercase block"
+            >
+              About Me
+            </motion.span>
+
+
             <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
               My <span className="text-emerald-500">Bio.</span>
             </h2>
+
           </header>
 
           <div className="text-slate-400 mb-8 text-base leading-relaxed">
@@ -60,7 +75,6 @@ function MyBioComponent() {
               backend logic and elegant, user-centric design.
             </p>
 
-            {/* Smooth transition for Read More */}
             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${readMore ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
               <p className="pb-4">
                 Beyond development, I’m the <span className="font-medium text-white">CEO of DREAM</span>, 
@@ -78,7 +92,6 @@ function MyBioComponent() {
             </button>
           </div>
 
-          {/* Skills Section */}
           <section className="mb-8">
             <h3 className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mb-6 flex items-center gap-4">
               Technical Expertise <span className="h-[1px] flex-1 bg-slate-800"></span>
@@ -91,13 +104,13 @@ function MyBioComponent() {
             </div>
           </section>
 
-          {/* CV Button */}
           <a 
             href="/path-to-your-cv.pdf" 
             className="inline-flex items-center justify-center px-6 py-3 border border-emerald-500/50 text-emerald-500 rounded-xl text-sm font-bold hover:bg-emerald-500 hover:text-black transition-all w-fit"
           >
             Download CV
           </a>
+
         </div>
       </div>
     </section>
