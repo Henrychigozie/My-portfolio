@@ -9,7 +9,7 @@ import Image3 from "../weather checker.png";
 
 const projects = [
   {
-    title: "Boldo: Modern Corporate SaaS Landing Page",
+    title: "Boldo: Modern Corporate SaaS Web-Page",
     description:
       "A high-performance, multi-page business platform designed for modern startups. This project demonstrates advanced responsive design, structured navigation, and a clean, professional UI built to convert visitors into clients.",
     tech: ["HTML5", "Tailwind CSS", "Bootstrap"],
