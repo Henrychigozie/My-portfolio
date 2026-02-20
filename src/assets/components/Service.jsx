@@ -131,42 +131,52 @@ const Services = () => {
         </div>
 
 
-        {/* Premium CTA */}
-        <div className="mt-28">
+       {/* Premium CTA */}
+<div className="mt-28">
+  <div className="relative rounded-[40px] p-[1px] bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-600">
+    <div className="bg-[#020617] rounded-[40px] p-14 text-center relative overflow-hidden">
+      
+      {/* Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-emerald-500/10 blur-[120px] rounded-full"/>
 
-          <div className="relative rounded-[40px] p-[1px] bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-600">
+      {/* Professional Availability Badge */}
+      <div className="flex items-center justify-center gap-2 mb-6 relative z-10">
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span className="text-[10px] uppercase tracking-[0.2em] text-emerald-500 font-bold">
+          Available for Q1 2026 Projects
+        </span>
+      </div>
 
-            <div className="bg-[#020617] rounded-[40px] p-14 text-center relative overflow-hidden">
+      <h3 className="text-3xl font-bold mb-4 relative z-10 text-white">
+        Ready to Build Something Exceptional?
+      </h3>
 
-              {/* Glow */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-emerald-500/10 blur-[120px] rounded-full"/>
+      <p className="text-slate-400 max-w-xl mx-auto mb-8 relative z-10">
+        Let’s collaborate to create a world-class digital product that elevates
+        your brand and delivers measurable impact.
+      </p>
 
-              <h3 className="text-3xl font-bold mb-4">
-                Ready to Build Something Exceptional?
-              </h3>
+      {/* Enhanced Button */}
+      <a
+        href="#contact"
+        className="group inline-flex items-center justify-center gap-3 px-10 py-4
+        bg-gradient-to-r from-emerald-500 to-teal-400
+        rounded-xl font-bold text-black
+        hover:scale-105
+        transition-all duration-300
+        shadow-lg shadow-emerald-900/40 relative z-10"
+      >
+        <span>Start a Project</span>
+        
+      
+      </a>
 
-              <p className="text-slate-400 max-w-xl mx-auto mb-8">
-                Let’s collaborate to create a world-class digital product that elevates
-                your brand and delivers measurable impact.
-              </p>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center px-10 py-4
-                bg-gradient-to-r from-emerald-500 to-teal-400
-                rounded-xl font-semibold text-black
-                hover:scale-105
-                transition
-                shadow-lg shadow-emerald-900/40"
-              >
-                Start a Project
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
+    </div>
+  </div>
+</div>
 
       </div>
     </section>
