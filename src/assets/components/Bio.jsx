@@ -70,14 +70,18 @@ function MyBioComponent() {
     >
       <div className="max-w-6xl w-full bg-[#0f172a]/40 backdrop-blur-md border border-slate-800/50 shadow-2xl rounded-[2rem] flex flex-col md:flex-row overflow-hidden">
         {/* Image Section */}
-        <div className="md:w-5/12 relative overflow-hidden">
-          <img
-            src={Image2}
-            alt="Anaekwe Chigozie Henry"
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 ease-in-out"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-60"></div>
-        </div>
+      {/* Replace your Image Section with this */}
+<div className="md:w-5/12 relative overflow-hidden bg-slate-900"> {/* Added bg-slate-900 as placeholder */}
+  <motion.img
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    src={Image2}
+    alt="Anaekwe Chigozie Henry"
+    className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 ease-in-out"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-60"></div>
+</div>
 
         {/* Content Section */}
         <div className="md:w-7/12 p-8 lg:p-16 flex flex-col justify-center">
